@@ -40,38 +40,19 @@
         <section class="lower-section">
             <div class="form-card">
                 <p class="form-title">Post a comment</p>
-                <form name="comment-form" method="POST">
+                <div id="success"></div>
+                <div id="failed"></div>
+                <form name="comment-form" id="comment-form" method="POST">
                     <div class="form-control">
-                        <input type="text" name="username" placeholder="Username" required="required">
+                        <input type="text" name="username" id="username" placeholder="Username" required="required">
                     </div>
                     <div class="form-control">
-                        <textarea name="comment" placeholder="Comment" required="required"></textarea>
+                        <textarea name="comment" id="comment-text" placeholder="Comment" required="required"></textarea>
                     </div>
                     <input type="submit" value="Post Comment" class="submit">
                 </form>
             </div>
-            <div class="comments">
-                <div class="comment">
-                    <span class="username">kinkyGal69</span>
-                    <p class="comment-text">This is both beautifully written, and a vital Voice, that should be heard.</p>
-                </div>
-                <div class="comment">
-                    <span class="username">sexting101</span>
-                    <p class="comment-text">Hey Mark I was just wondering how you can become a dungeon master with kink?</p>
-                </div>
-                <div class="comment">
-                    <span class="username">verySexxxy</span>
-                    <p class="comment-text">I just want to say thank you, Although i myself am not an adult performer. I still want to say thank you because a person close to me is and they are terrified to speak out and to share their voice.</p>
-                </div>
-                <div class="comment">
-                    <span class="username">sexting101</span>
-                    <p class="comment-text">Thanks for the info!</p>
-                </div>
-                <div class="comment">
-                    <span class="username">hotGuyXXX</span>
-                    <p class="comment-text">Serisously though, interesting video and the sort of thing I hope you’ll continue to do.</p>
-                </div>
-            </div>
+            <div class="comments" id="comments"></div>
         </section>
     </div>
 {% endblock %}
