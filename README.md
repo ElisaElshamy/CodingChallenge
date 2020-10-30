@@ -19,11 +19,18 @@ side. Uses the included `./assets/images/placeholder.png` image.
 The lower section displays a form on the left-hand side with a username field and a comment field.
 The right-hand side displays some comments in a list-like fashion.
 
-Currently these comments are just hard coded into HTML as filler text.
+Comments read/written to local JSON server file `db.json`.
+
+## Usage
+
+Please run the following command to use the JSON dev server `http://localhost:3001/comments`
+
+```bash
+npm run server
+```
 
 ### Roadmap
 
 - Utilize features of Nunjucks by breaking block content in `home.njk` into smaller templates.
 - Mobile nav is a hamburger nav that opens and closes.
-- The form submits data and displays it on the DOM w/ JS so that user may see comment posted.
-- User sees message that comment was posted successfully.
+- Webpack could be used to bundle Axios for node module install instead of depending on Axios CDN.
