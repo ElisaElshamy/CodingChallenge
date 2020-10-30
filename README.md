@@ -34,3 +34,4 @@ npm run server
 - Utilize features of Nunjucks by breaking block content in `home.njk` into smaller templates.
 - Mobile nav is a hamburger nav that opens and closes.
 - Webpack could be used to bundle Axios for node module install instead of depending on Axios CDN.
+- Cleanup eslint errors on `comments.js` file.
