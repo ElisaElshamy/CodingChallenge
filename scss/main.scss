@@ -1,8 +1,10 @@
+$font-stack: Arial, Helvetica, sans-serif;
 $primary-bg: #000;
-$primary-text-color: #FF3B3B;
+$primary-text-color: #ff3b3b;
 
 body {
-	background-color: $primary-bg
+	background-color: $primary-bg;
+	font-family: $font-stack;
 }
 
 h1,
@@ -12,4 +14,46 @@ h4,
 h5,
 p {
 	color: $primary-text-color;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	.navbar {
+		display: grid;
+		grid-template-columns: 50px 3fr;
+		grid-gap: 20px;
+		.logo {
+			img {
+				width: 100%;
+			}
+		}
+		nav {
+			ul {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, 100px);
+				grid-gap: 20px;
+			}
+		}
+	}
+
+	.upper-section {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 20px;
+
+		.placeholder {
+			img {
+				width: 100%;
+				max-width: 400px;
+			}
+		}
+	}
+
+	.lower-section {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 20px;
+	}
 }
