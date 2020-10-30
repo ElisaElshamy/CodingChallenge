@@ -31,7 +31,7 @@
         <section class="upper-section">
             <div class="left">
                 <h1>Welcome to Kink.com</h1>
-                <p>Get Kink for 50% off</p>
+                <p class="promo-text">Get Kink for 50% off</p>
             </div>
             <div class="placeholder">
                 <img src="./assets/placeholder.png"/>
@@ -39,12 +39,13 @@
         </section>
         <section class="lower-section">
             <div class="form-card">
+                <p class="form-title">Post a comment</p>
                 <form name="comment-form" method="POST">
                     <div class="form-control">
                         <input type="text" name="username" placeholder="Username" required="required">
                     </div>
                     <div class="form-control">
-                        <input type="text" name="comment" placeholder="Comment" required="required">
+                        <textarea name="comment" placeholder="Comment" required="required"></textarea>
                     </div>
                     <input type="submit" value="Post Comment" class="submit">
                 </form>
